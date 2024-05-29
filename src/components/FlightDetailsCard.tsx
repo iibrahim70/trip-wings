@@ -1,5 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { MdFlight } from "react-icons/md";
+import flightIcon from "../assets/icons/icon.png";
 
 const FlightDetailsCard = () => {
   return (
@@ -60,53 +62,72 @@ const FlightDetailsCard = () => {
           </p>
         </div>
 
-        {/* depature details */}
-        <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
-          <div className="space-y-3">
-            <div>
-              <h3 className="text-xl font-bold">DAC - DXB</h3>
-              <p>12 hr 20 min</p>
-            </div>
+        {/* depature and aleart details */}
+        <div className="flex items-center gap-5">
+          <div className="flex flex-col items-center gap-3">
+            <img
+              src={flightIcon}
+              alt="Flight Icon"
+              className="size-6 object-cover"
+            />
 
-            <div className="text-gray-500">
-              <p className="font-semibold">Turkish Airlines</p>
-              <p>Flight No: TUR467</p>
-            </div>
+            <div className="border-[1.5px] border-r border-gray-300 h-14" />
+
+            <MdFlight className="size-5 text-gray-500 rotate-180" />
+
+            <div className="border-[1.5px] border-r border-gray-300 h-14" />
           </div>
 
-          <div className="space-y-3">
-            <div>
-              <h3 className="text-xl font-bold">7:30 PM</h3>
-              <p>28 Mar, Friday</p>
+          <div className="space-y-5">
+            {/* depature details */}
+            <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
+              <div className="space-y-3.5">
+                <div>
+                  <h3 className="text-xl font-bold">DAC - DXB</h3>
+                  <p>12 hr 20 min</p>
+                </div>
+
+                <div className="text-gray-500">
+                  <p className="font-semibold">Turkish Airlines</p>
+                  <p>Flight No: TUR467</p>
+                </div>
+              </div>
+
+              <div className="space-y-3.5">
+                <div>
+                  <h3 className="text-xl font-bold">7:30 PM</h3>
+                  <p>28 Mar, Friday</p>
+                </div>
+
+                <div className="text-gray-500">
+                  <p>Airbus Industrie 737-800-738</p>
+                  <p>
+                    Class: <span className="font-semibold">ECONOMY-Y (O)</span>
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold">8:50 AM</h3>
+                <p>29 Mar, Saturday</p>
+              </div>
             </div>
 
-            <div className="text-gray-500">
-              <p>Airbus Industrie 737-800-738</p>
+            {/* aleart information */}
+            <div className="bg-orange-100 p-2.5 rounded-md flex items-center gap-3">
+              <div>
+                <span className="bg-orange-500 text-white size-5 rounded-full flex items-center justify-center">
+                  !
+                </span>
+              </div>
+
               <p>
-                Class: <span className="font-semibold">ECONOMY-Y (O)</span>
+                Technical stoppage at Malpensa International Airport (Milano).
+                Before booking this flight please check your visa requirements
+                as per your nationality.
               </p>
             </div>
           </div>
-
-          <div>
-            <h3 className="text-xl font-bold">8:50 AM</h3>
-            <p>29 Mar, Saturday</p>
-          </div>
-        </div>
-
-        {/* aleart information */}
-        <div className="bg-orange-100 p-2.5 rounded-md flex items-center gap-3">
-          <div>
-            <span className="bg-orange-500 text-white size-5 rounded-full flex items-center justify-center">
-              !
-            </span>
-          </div>
-
-          <p>
-            Technical stoppage at Malpensa International Airport (Milano).
-            Before booking this flight please check your visa requirements as
-            per your nationality.
-          </p>
         </div>
 
         {/* layover information */}
@@ -119,37 +140,54 @@ const FlightDetailsCard = () => {
           </div>
         </div>
 
-        {/* depature details */}
-        <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
-          <div className="space-y-3">
-            <div>
-              <h3 className="text-xl font-bold">DAC - DXB</h3>
-              <p>12 hr 20 min</p>
-            </div>
+        {/* depature and aleart details */}
+        <div className="flex items-center gap-5">
+          <div className="flex flex-col items-center gap-3">
+            <img
+              src={flightIcon}
+              alt="Flight Icon"
+              className="size-6 object-cover"
+            />
 
-            <div className="text-gray-500">
-              <p className="font-semibold">Turkish Airlines</p>
-              <p>Flight No: TUR467</p>
-            </div>
+            <div className="border-[1.5px] border-r border-gray-300 h-6" />
+
+            <MdFlight className="size-5 text-gray-500 rotate-180" />
+
+            <div className="border-[1.5px] border-r border-gray-300 h-6" />
           </div>
 
-          <div className="space-y-3">
+          {/* depature details */}
+          <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
+            <div className="space-y-3.5">
+              <div>
+                <h3 className="text-xl font-bold">DAC - DXB</h3>
+                <p>12 hr 20 min</p>
+              </div>
+
+              <div className="text-gray-500">
+                <p className="font-semibold">Turkish Airlines</p>
+                <p>Flight No: TUR467</p>
+              </div>
+            </div>
+
+            <div className="space-y-3.5">
+              <div>
+                <h3 className="text-xl font-bold">7:30 PM</h3>
+                <p>28 Mar, Friday</p>
+              </div>
+
+              <div className="text-gray-500">
+                <p>Airbus Industrie 737-800-738</p>
+                <p>
+                  Class: <span className="font-semibold">ECONOMY-Y (O)</span>
+                </p>
+              </div>
+            </div>
+
             <div>
-              <h3 className="text-xl font-bold">7:30 PM</h3>
-              <p>28 Mar, Friday</p>
+              <h3 className="text-xl font-bold">8:50 AM</h3>
+              <p>29 Mar, Saturday</p>
             </div>
-
-            <div className="text-gray-500">
-              <p>Airbus Industrie 737-800-738</p>
-              <p>
-                Class: <span className="font-semibold">ECONOMY-Y (O)</span>
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-bold">8:50 AM</h3>
-            <p>29 Mar, Saturday</p>
           </div>
         </div>
 
