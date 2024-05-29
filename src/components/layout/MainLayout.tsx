@@ -8,7 +8,7 @@ const MainLayout = () => {
 
       <section className="section-wrapper min-h-[calc(100dvh-56px)] py-5 flex justify-between gap-10">
         {/* left side navigation */}
-        <aside className="max-md:hidden w-3/12 shadow rounded-md border" />
+        <aside className="max-lg:hidden w-3/12 shadow rounded-md border" />
 
         {/* content details  */}
         <FlightDetailsCard />

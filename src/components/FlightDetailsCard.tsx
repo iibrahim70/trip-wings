@@ -18,18 +18,20 @@ const FlightDetailsCard = () => {
       {/* flight details card  */}
       <div className="shadow rounded-md p-5 space-y-5 border">
         {/* serial num and destination */}
-        <div className="flex items-center justify-between gap-10">
+        <div className="flex flex-wrap items-center justify-between gap-5 xl:gap-10">
           <div className="flex items-center gap-5">
             {/* serial number */}
-            <span className="bg-blue-500 text-white size-8 rounded-full flex items-center justify-center">
-              1
-            </span>
+            <div>
+              <span className="bg-blue-500 text-white size-7 rounded-full flex items-center justify-center">
+                1
+              </span>
+            </div>
 
             {/* destination information*/}
             <div>
               <h3 className="text-xl font-bold">DAC → JFK</h3>
 
-              <div className="flex items-center gap-2.5">
+              <div className="flex flex-wrap items-center gap-2.5">
                 <p>Round Trip</p>
                 <div className="size-2 bg-gray-400 rounded-full" />
                 <p>25 Mar - 4 Apr 2023</p>
@@ -41,13 +43,13 @@ const FlightDetailsCard = () => {
 
           {/* time duration */}
           <div className="bg-blue-100 text-blue-500 font-semibold px-2.5 py-1 rounded-full">
-            <span>33h 20m</span>
+            33h 20m
           </div>
         </div>
 
         {/* depature information */}
-        <div className="flex items-center justify-between gap-10">
-          <div className="flex items-center gap-10">
+        <div className="flex items-center justify-between gap-5 xl:gap-10">
+          <div className="flex items-center gap-5 xl:gap-10">
             <FaLocationDot className="size-5 text-gray-500" />
             <p className="font-semibold">Departure from Dhaka</p>
           </div>
@@ -59,7 +61,7 @@ const FlightDetailsCard = () => {
         </div>
 
         {/* depature details */}
-        <div className="w-[85%] flex items-center justify-between">
+        <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
           <div className="space-y-3">
             <div>
               <h3 className="text-xl font-bold">DAC - DXB</h3>
@@ -108,17 +110,17 @@ const FlightDetailsCard = () => {
         </div>
 
         {/* layover information */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-5 xl:gap-10">
           <FaLocationDot className="size-5 text-gray-500" />
 
-          <div className="bg-blue-100 flex items-center justify-between gap-10 p-2.5 rounded-md w-full">
+          <div className="bg-blue-100 flex items-center justify-between gap-5 xl:gap-10 p-2.5 rounded-md w-full">
             <p className="font-semibold">Layover at Dubai: 12 hr 20 min </p>
             <p className="text-gray-500">Dubai International Airport</p>
           </div>
         </div>
 
         {/* depature details */}
-        <div className="w-[85%] flex items-center justify-between">
+        <div className="md:w-[85%] flex flex-wrap items-center justify-between gap-5 xl:gap-10">
           <div className="space-y-3">
             <div>
               <h3 className="text-xl font-bold">DAC - DXB</h3>
@@ -152,8 +154,8 @@ const FlightDetailsCard = () => {
         </div>
 
         {/* destination information */}
-        <div className="flex items-center justify-between gap-10">
-          <div className="flex items-center gap-10">
+        <div className="flex items-center justify-between gap-5 xl:gap-10">
+          <div className="flex items-center gap-5 xl:gap-10">
             <FaLocationDot className="size-5 text-gray-500" />
             <p className="font-semibold">Destination at New York</p>
           </div>
